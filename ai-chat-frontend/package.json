@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest --run",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@types/react-syntax-highlighter": "^15.5.13",

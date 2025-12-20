@@ -36,7 +36,7 @@ describe('MessageBubble Property Tests', () => {
           expect(container.firstChild).toBeTruthy();
 
           // 检查时间戳是否存在
-          const timestampElements = container.querySelectorAll('.text-xs');
+          const timestampElements = container.querySelectorAll('.opacity-75');
           expect(timestampElements.length).toBeGreaterThan(0);
 
           // 检查头像是否存在
@@ -51,17 +51,15 @@ describe('MessageBubble Property Tests', () => {
             expect(containerDiv).toHaveClass('justify-start');
           }
 
-          // 检查气泡样式
+          // 检查气泡样式 - 使用新的主题类
           const bubbleElements = container.querySelectorAll('.rounded-2xl');
           expect(bubbleElements.length).toBeGreaterThan(0);
           
           const bubble = bubbleElements[0] as HTMLElement;
           if (sender === 'user') {
-            expect(bubble).toHaveClass('bg-primary-500');
-            expect(bubble).toHaveClass('text-white');
+            expect(bubble).toHaveClass('user-bubble');
           } else {
-            expect(bubble).toHaveClass('bg-white');
-            expect(bubble).toHaveClass('text-gray-800');
+            expect(bubble).toHaveClass('ai-bubble');
           }
         }
       ),
@@ -95,8 +93,8 @@ describe('MessageBubble Property Tests', () => {
           const bubbleElements = container.querySelectorAll('.rounded-2xl');
           expect(bubbleElements.length).toBeGreaterThan(0);
           
-          // 应该有内容区域
-          const contentElements = container.querySelectorAll('.text-sm');
+          // 应该有内容区域 - 使用更通用的选择器
+          const contentElements = container.querySelectorAll('.rounded-2xl > div');
           expect(contentElements.length).toBeGreaterThan(0);
         }
       ),

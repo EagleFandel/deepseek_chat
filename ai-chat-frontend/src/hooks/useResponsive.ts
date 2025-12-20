@@ -29,6 +29,9 @@ export function useResponsive() {
   const [currentBreakpoint, setCurrentBreakpoint] = useState<Breakpoint>('lg');
 
   useEffect(() => {
+    // 检查是否在浏览器环境
+    if (typeof window === 'undefined') return;
+
     function handleResize() {
       const width = window.innerWidth;
       const height = window.innerHeight;

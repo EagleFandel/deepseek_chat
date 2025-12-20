@@ -4,6 +4,9 @@ type Theme = 'light' | 'dark' | 'system';
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
+    // 检查是否在浏览器环境
+    if (typeof window === 'undefined') return 'light';
+    
     // 从localStorage获取保存的主题，默认为system
     const savedTheme = localStorage.getItem('theme') as Theme;
     return savedTheme || 'system';
@@ -12,6 +15,9 @@ export function useTheme() {
   const [resolvedTheme, setResolvedTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
+    // 检查是否在浏览器环境
+    if (typeof window === 'undefined') return;
+    
     const root = window.document.documentElement;
     
     // 移除之前的主题类
@@ -21,7 +27,7 @@ export function useTheme() {
     
     if (theme === 'system') {
       // 检测系统主题偏好
-      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      const systemTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       effectiveTheme = systemTheme;
     } else {
       effectiveTheme = theme;
@@ -37,7 +43,7 @@ export function useTheme() {
 
   // 监听系统主题变化
   useEffect(() => {
-    if (theme !== 'system') return;
+    if (typeof window === 'undefined' || theme !== 'system' || !window.matchMedia) return;
 
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     

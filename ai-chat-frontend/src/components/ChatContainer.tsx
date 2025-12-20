@@ -9,8 +9,8 @@ import { MessageCircle, RotateCcw, AlertCircle, Sun, Moon, Monitor } from 'lucid
 export function ChatContainer({ className = '' }: ChatContainerProps) {
   const { session, isTyping, isLoading, error } = useChatState();
   const { sendMessage, clearChat } = useChatActions();
-  const { theme, resolvedTheme, toggleTheme } = useTheme();
-  const { isMobile, isTablet } = useResponsive();
+  const { theme, toggleTheme } = useTheme();
+  const { isMobile } = useResponsive();
 
   const handleSendMessage = async (content: string) => {
     await sendMessage(content);
