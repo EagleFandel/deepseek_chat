@@ -178,6 +178,8 @@ src/
 
 ## 🤝 贡献指南
 
+提交前请先阅读仓库级 [贡献指南](../CONTRIBUTING.md)，其中包含 issue、分支、提交与 PR 规范。
+
 1. Fork项目
 2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
@@ -186,7 +188,7 @@ src/
 
 ## 📄 许可证
 
-本项目采用MIT许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+本项目采用MIT许可证 - 查看 [../LICENSE](../LICENSE) 文件了解详情
 
 ## 🙏 致谢
 

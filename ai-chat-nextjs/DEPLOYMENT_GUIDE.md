@@ -32,7 +32,7 @@ vercel
 2. **点击 "New Project"**
 
 3. **导入GitHub仓库**：
-   - 选择 `https://github.com/EagleFandel/test.git`
+   - 选择 `https://github.com/EagleFandel/deepseek_chat.git`
    - 选择 `ai-chat-nextjs` 目录作为根目录
 
 4. **配置项目设置**：

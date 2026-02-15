@@ -53,8 +53,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/EagleFandel/chat.git
-cd chat
+git clone https://github.com/EagleFandel/deepseek_chat.git
+cd deepseek_chat
 
 # 选择项目（推荐 Next.js 版本）
 cd ai-chat-nextjs
@@ -88,7 +88,7 @@ NEXT_PUBLIC_APP_VERSION=1.0.0
 ## 📁 项目结构
 
 ```
-chat/
+deepseek_chat/
 ├── ai-chat-nextjs/          # Next.js 全栈应用
 │   ├── src/
 │   │   ├── app/             # App Router
@@ -115,7 +115,7 @@ chat/
 
 ### 部署到 Vercel（推荐）
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/EagleFandel/chat&project-name=ai-chat&repository-name=ai-chat&root-directory=ai-chat-nextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/EagleFandel/deepseek_chat&project-name=ai-chat&repository-name=deepseek_chat&root-directory=ai-chat-nextjs)
 
 **手动部署步骤：**
 
@@ -198,6 +198,12 @@ chat/
 3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
 4. 推送到分支 (`git push origin feature/AmazingFeature`)
 5. 提交 Pull Request
+
+## 📚 开源治理
+
+- [贡献指南](./CONTRIBUTING.md)
+- [行为准则](./CODE_OF_CONDUCT.md)
+- [安全策略](./SECURITY.md)
 
 ## 📄 许可证
 

@@ -8,8 +8,8 @@
 
 1. **克隆项目**：
 ```bash
-git clone https://github.com/EagleFandel/test.git
-cd test/ai-chat-nextjs
+git clone https://github.com/EagleFandel/deepseek_chat.git
+cd deepseek_chat/ai-chat-nextjs
 ```
 
 2. **安装依赖**：
@@ -32,7 +32,7 @@ npm run dev
 
 ### 部署到Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/EagleFandel/test&project-name=ai-chat-nextjs&repository-name=ai-chat-nextjs&root-directory=ai-chat-nextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/EagleFandel/deepseek_chat&project-name=ai-chat-nextjs&repository-name=deepseek_chat&root-directory=ai-chat-nextjs)
 
 或者按照 [部署指南](./DEPLOYMENT_GUIDE.md) 手动部署。
 
@@ -130,11 +130,11 @@ NEXT_PUBLIC_APP_VERSION=1.0.0
 
 ## 🤝 贡献
 
-欢迎提交Issue和Pull Request！
+欢迎提交 Issue 和 Pull Request。详细流程请参阅 [贡献指南](../CONTRIBUTING.md)。
 
 ## 📄 许可证
 
-MIT License
+本项目采用 MIT 许可证，详见 [../LICENSE](../LICENSE)。
 
 ## 🔗 相关链接
 

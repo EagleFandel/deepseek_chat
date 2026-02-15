@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EagleFandel/deepseek_chat.git",
+    "directory": "ai-chat-frontend"
+  },
+  "bugs": {
+    "url": "https://github.com/EagleFandel/deepseek_chat/issues"
+  },
+  "homepage": "https://github.com/EagleFandel/deepseek_chat#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

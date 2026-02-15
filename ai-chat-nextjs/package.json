@@ -2,6 +2,16 @@
   "name": "ai-chat-nextjs",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EagleFandel/deepseek_chat.git",
+    "directory": "ai-chat-nextjs"
+  },
+  "bugs": {
+    "url": "https://github.com/EagleFandel/deepseek_chat/issues"
+  },
+  "homepage": "https://github.com/EagleFandel/deepseek_chat#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

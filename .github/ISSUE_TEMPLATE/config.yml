@@ -1,0 +1,8 @@
+﻿blank_issues_enabled: false
+contact_links:
+  - name: 贡献指南
+    url: https://github.com/EagleFandel/deepseek_chat/blob/main/CONTRIBUTING.md
+    about: 提交 Issue 和 PR 前请先阅读协作规范。
+  - name: 安全漏洞上报
+    url: https://github.com/EagleFandel/deepseek_chat/blob/main/SECURITY.md
+    about: 安全问题请按安全策略进行负责任披露。
